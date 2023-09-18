@@ -36,27 +36,33 @@
 
     </header>
 
-    <main class="main flex-center">
+    <main class="main ">
         <div class="content__container">
-            <section class="content__header">
+            <section class="content__header flex-center">
+                <img class="bg-rings" src="/starter-code/assets/images/pattern-rings.svg" alt="">
+                <img src="/starter-code/assets/images/pattern-circle.svg" alt="" class="bg-circle">
                 <div class="content__header-left">
                     <h1 class="content-title fs-800">
-                        Nice to meet you!<br> I'm <span>Zsolt Varjú.</span>
+                        Nice to meet you!<br> I'm <span class="underline">Zsolt Varjú</span>.
                     </h1>
                     <p class="content-description fs-300">
                         Based in the UK, I’m a front-end developer passionate about building accessible web apps that
                         users love.
                     </p>
                     <div class="content__button-container">
-                        <button class="button">Get in touch</button>
+                        <button class="button">Contact me</button>
                     </div>
                 </div>
                 <div class="content__header-right">
-                    <img src="starter-code/assets/images/image-profile-mobile.webp" alt="Image">
+                    <picture>
+                        <source srcset="starter-code/assets/images/image-profile-desktop.webp" media="(min-width: 1280px)">
+                        <source srcset="starter-code/assets/images/image-profile-tablet.webp" media="(min-width: 768px)">
+                        <img src="starter-code/assets/images/image-profile-mobile.webp" alt="Profil">
+                    </picture>
                 </div>
             </section>
-            <hr class="content__divider">
-            <section class="knowledge__container">
+            <hr class="content__divider flex-center ">
+            <section class="knowledge__container flex-center">
                 <div class="knowledge-item">
                     <h2 class="knowledge-title fs-600">
                         HTML
@@ -105,9 +111,12 @@
                         4 Years Experience
                     </p>
                 </div>
+                <img class="bg-rings2" src="/starter-code/assets/images/pattern-rings.svg" alt="">
             </section>
+            <hr class="content__divider flex-center projects-divider">
+            
 
-            <section class="main__content-container">
+            <section class="main__content-container flex-center">
                 <div class="main__content-header">
                     <h2 class="main__content-title fs-800">
                         Projects
@@ -118,7 +127,7 @@
                 <div class="main__content-projects">
                     <div class="project">
                         <div class="project__image">
-                            <img src="" alt="">
+                            <img src="/starter-code/assets/images/thumbnail-project-1-small.webp" alt="">
 
                         </div>
                         <div class="project__title fs-400">
@@ -128,11 +137,15 @@
                         <div class="project__description fs-300">
                             <p>HTML</p>
                             <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button">View project</button>
+                            <button class="button">View code</button>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project__image">
-                            <img src="" alt="">
+                            <img src="/starter-code/assets/images/thumbnail-project-2-small.webp" alt="">
                         </div>
                         <div class="project__title fs-400">
                             <h3>Design portfolio</h3>
@@ -141,11 +154,15 @@
                         <div class="project__description fs-300">
                             <p>HTML</p>
                             <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button">View project</button>
+                            <button class="button">View code</button>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project__image">
-                            <img src="" alt="">
+                            <img src="/starter-code/assets/images/thumbnail-project-3-small.webp" alt="">
                         </div>
                         <div class="project__title fs-400">
                             <h3>Design portfolio</h3>
@@ -154,11 +171,15 @@
                         <div class="project__description fs-300">
                             <p>HTML</p>
                             <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button">View project</button>
+                            <button class="button">View code</button>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project__image">
-                            <img src="" alt="">
+                            <img src="/starter-code/assets/images/thumbnail-project-4-small.webp" alt="">
                         </div>
                         <div class="project__title fs-400">
                             <h3>Design portfolio</h3>
@@ -167,11 +188,15 @@
                         <div class="project__description fs-300">
                             <p>HTML</p>
                             <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button">View project</button>
+                            <button class="button">View code</button>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project__image">
-                            <img src="" alt="">
+                            <img src="/starter-code/assets/images/thumbnail-project-5-small.webp" alt="">
                         </div>
                         <div class="project__title fs-400">
                             <h3>Design portfolio</h3>
@@ -180,11 +205,15 @@
                         <div class="project__description fs-300">
                             <p>HTML</p>
                             <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button">View project</button>
+                            <button class="button">View code</button>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project__image">
-                            <img src="" alt="">
+                            <img src="/starter-code/assets/images/thumbnail-project-6-small.webp" alt="">
 
                         </div>
                         <div class="project__title fs-400">
@@ -194,59 +223,77 @@
                         <div class="project__description fs-300">
                             <p>HTML</p>
                             <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button">View project</button>
+                            <button class="button">View code</button>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="header__footer">
-                <div class="header__footer-container">
-                    <div class="header__footer-left">
-                        <h2 class="header__footer-title fs-800">
-                            Contact me
-                        </h2>
-                        <p class="header__footer-description fs-300">
-                            I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
-
-                        </p>
-                    </div>
-
-                    <div class="header__footer-right">
-                        <form action="submit">
-                            <input type="text" name="name" id="name" placeholder="Name">
-                            <input type="email" name="email" id="email" placeholder="Email">
-                            <input type="text" name="message" id="message" placeholder="Message">
-                            <button class="button" type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <hr class="content__divider">
+          
 
 
         </div>
     </main>
 
     <footer class="footer ">
-        <div class="footer__container flex-center">
-            <div class="footer__left">
-                <h2 class="footer__title fs-400">
-                    Let's work together
-                </h2>
+        <section class="header__footer">
+            <div class="header__footer-container flex-center">
+                <div class="header__footer-left">
+                    <h2 class="header__footer-title fs-800">
+                        Contact
+                    </h2>
+                    <p class="header__footer-description fs-300">
+                        I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
+
+                    </p>
+                </div>
+
+                <div class="header__footer-right">
+                    <form action="submit">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="text" name="message" id="message" placeholder="Message">
+                    </form>
+
+
+                </div>
+                <img class="bg-rings3" src="/starter-code/assets/images/pattern-rings.svg" alt="">
             </div>
-            <div class="footer__right">
-                <div class="logo__container">
-                    <a href=""><img src="starter-code/assets/images/icon-github.svg" alt="GitHub"
-                            title="GitHub"></a>
-                    <a href=""><img src="starter-code/assets/images/icon-frontend-mentor.svg"
-                            alt="Frontendmentor" title="Frontendmentor"></a>
-                    <a href=""><img src="starter-code/assets/images/icon-linkedin.svg" alt="LinkedIn"
-                            title="LinkedIn"></a>
-                    <a href=""><img src="starter-code/assets/images/icon-twitter.svg" alt="Twitter"
-                            title="Twitter"></a>
+        </section>
+        <section>
+            <div class="form__button flex-center">
+                <button class="button" type="submit">Send message</button>
+            </div>
+        </section>
+        <hr class="content__divider flex-center">
+
+        <div class="bottom__footer-container flex-center">
+            <div class="footer__container ">
+                <div class="footer__left">
+                    <h2 class="footer__title fs-400">
+                        Let's work together
+                    </h2>
+                </div>
+                <div class="footer__right">
+                    <div class="logo__container">
+                        <a href=""><img src="starter-code/assets/images/icon-github.svg" alt="GitHub"
+                                title="GitHub"></a>
+                        <a href=""><img src="starter-code/assets/images/icon-frontend-mentor.svg"
+                                alt="Frontendmentor" title="Frontendmentor"></a>
+                        <a href=""><img src="starter-code/assets/images/icon-linkedin.svg" alt="LinkedIn"
+                                title="LinkedIn"></a>
+                        <a href=""><img src="starter-code/assets/images/icon-twitter.svg" alt="Twitter"
+                                title="Twitter"></a>
+                    </div>
                 </div>
             </div>
         </div>
+        
+
+
     </footer>
 </body>
 
