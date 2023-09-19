@@ -25,7 +25,9 @@
 html,
 body {
     height: 100%;
-    overflow-x: hidden
+    box-sizing: border-box;
+    overflow-x: hidden;
+
 }
 
 /*
@@ -199,6 +201,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1rem;
+    max-width: 1110px;
 }
 
 /* || HEADER || */
@@ -245,6 +248,7 @@ body {
 .content__header {
     display: grid;
     grid-template-rows: auto auto;
+    position: relative;
 }
 
 .content__header-right {
@@ -254,8 +258,9 @@ body {
     margin: 0 auto;
 }
 
-.content__header-right picture img {
+.content__header-right img {
     width: 100%;
+    height: 100%;
     margin-top: -9rem;
     margin-bottom: 2rem;
     z-index: -2;
@@ -317,6 +322,7 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
+    
 }
 
 .main__content-container {
@@ -432,7 +438,6 @@ body {
 .bg-circle{
     position: absolute;
     bottom: 60%;
-    z-index: -1;
     right: 0;
     transform: translateX(60%);
     z-index: 1;
@@ -494,27 +499,48 @@ body {
         
     }
 
+    .content__divider{
+        margin: 0rem 1rem 0rem 1rem;
+    }
+
     /* || CONTENT HEADER ||*/
 .content__header
 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
+    margin: 1rem 0rem 0rem 1rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 490px;
 }
-
 
 .content__header-right{
     grid-column-start: 2;
-    max-width: 100%;
-    position: relative;
+    width: 100%;
+    height: 100%;
+
 }
 
-/*.content__header-right picture img{
-    position: absolute;
-    transform: scale(1.2);
-    top: -10.5rem;
+.content__header-right img{
     z-index: -1;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: -30%;
+    right: 0;
     
-}*/
+    
+    aspect-ratio: initial;
+}
+
+.content__header-left{
+text-align: left;
+align-items: flex-start;
+gap: 4rem;
+margin: 0;
+}
+
+
 
 
 
@@ -580,7 +606,7 @@ margin-bottom: 5rem;
 }
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1124px) {
     :root {
         /* || FONT-SIZE || */
         --fs-300: 1.125rem;
@@ -593,5 +619,37 @@ margin-bottom: 5rem;
         /* 48px */
         --fs-800: 5.5rem;
         /* 88px */
+    }
+
+    .flex-center{
+        margin: 1rem auto;
+        max-width: 1110px;
+    }
+
+    .header .flex-center{
+        margin: 1rem;
+    }
+
+    .header__footer-container {
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .header__footer-container{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 12rem;
+    }
+
+    .form__button{  
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .header__footer-left{
+        text-align: left;
     }
 }
