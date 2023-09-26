@@ -9,8 +9,11 @@
         content="My portfolio which includes information about me, describes my knowledge and containes my finished projects">
     <title>Zsolt Varjú's portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/scrolling.js" defer></script>
     <script src="https://kit.fontawesome.com/faf7415ea6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 </head>
 
 <body>
@@ -24,12 +27,12 @@
 
             <div class="header__right-container">
                 <div class="logo__container">
-                    <a href=""><img src="starter-code/assets/images/icon-github.svg" alt="GitHub" title="GitHub"></a>
-                    <a href=""><img src="starter-code/assets/images/icon-frontend-mentor.svg" alt="Frontendmentor"
-                            title="Frontendmentor"></a>
-                    <a href=""><img src="starter-code/assets/images/icon-linkedin.svg" alt="LinkedIn"
-                            title="LinkedIn"></a>
-                    <a href=""><img src="starter-code/assets/images/icon-twitter.svg" alt="Twitter" title="Twitter"></a>
+                    <a href="https://github.com/zsoolti8917"><img src="starter-code/assets/images/icon-github.svg" alt="GitHub" title="GitHub" target="_blank"></a>
+                    <a href="https://www.frontendmentor.io/profile/zsoltvarju"><img src="starter-code/assets/images/icon-frontend-mentor.svg" alt="Frontendmentor"
+                            title="Frontendmentor" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/zsolt-varj%C3%BA-019419234/"><img src="starter-code/assets/images/icon-linkedin.svg" alt="LinkedIn"
+                            title="LinkedIn" target="_blank"></a>
+                    <a href="https://www.facebook.com/zsoolti8917/"><img src="starter-code/assets/images/icon-twitter.svg" alt="Twitter" title="Twitter" target="_blank"></a>
                 </div>
             </div>
         </div>
@@ -46,19 +49,13 @@
                         Nice to meet&nbspyou!<br> I'm <span class="underline">Zsolt&nbspVarjú</span>.
                     </h1>
                     <p class="content-description fs-300">
-                        Based in the UK, I’m a front-end developer passionate about building accessible web apps that
-                        users love.
+                        Based in Slovakia, I’m finishing my masters degree, interested in Frontend development.
                     </p>
                     <div class="content__button-container">
-                        <button class="button">Contact me</button>
+                        <button class="button scrollToBottom"> Contact me</button>
                     </div>
                 </div>
                 <div class="content__header-right">
-                     <!-- <picture>
-                        <source srcset="starter-code/assets/images/image-profile-desktop.webp" media="(min-width: 1280px)">
-                        <source srcset="starter-code/assets/images/image-profile-tablet.webp" media="(min-width: 768px)">
-                        <img src="starter-code/assets/images/image-profile-mobile.webp" alt="Profil">
-                    </picture> -->
                     <img src="starter-code/assets/images/image-profile-mobile.webp" alt="Profil">
                 </div>
             </section>
@@ -69,7 +66,7 @@
                         HTML
                     </h2>
                     <p class="knowledge-content fs-300">
-                        4 Years Experience
+                        6 Months Experience
                     </p>
                 </div>
                 <div class="knowledge-item">
@@ -77,7 +74,7 @@
                         CSS
                     </h2>
                     <p class="knowledge-content fs-300">
-                        4 Years Experience
+                        6 Months Experience
                     </p>
                 </div>
                 <div class="knowledge-item">
@@ -85,31 +82,31 @@
                         JavaScript
                     </h2>
                     <p class="knowledge-content fs-300">
-                        4 Years Experience
+                        6 Months Experience
                     </p>
                 </div>
                 <div class="knowledge-item">
                     <h2 class="knowledge-title fs-600">
-                        React
+                        Cypress
                     </h2>
                     <p class="knowledge-content fs-300">
-                        4 Years Experience
+                        Learning
                     </p>
                 </div>
                 <div class="knowledge-item">
                     <h2 class="knowledge-title fs-600">
-                        Node
+                        MySQL
                     </h2>
                     <p class="knowledge-content fs-300">
-                        4 Years Experience
+                        3 Months Experience
                     </p>
                 </div>
                 <div class="knowledge-item">
                     <h2 class="knowledge-title fs-600">
-                        MongoDB
+                        Python
                     </h2>
                     <p class="knowledge-content fs-300">
-                        4 Years Experience
+                        3 Months Experience
                     </p>
                 </div>
                 <img class="bg-rings2" src="/starter-code/assets/images/pattern-rings.svg" alt="">
@@ -122,34 +119,34 @@
                     <h2 class="main__content-title fs-800">
                         Projects
                     </h2>
-                    <button class="button">Contact me</button>
+                    <button class="button scrollToBottom">Contact me</button>
                 </div>
 
                 <div class="main__content-projects">
                     <div class="project">
                         <div class="project__image">
-                            <img src="/starter-code/assets/images/thumbnail-project-1-small.webp" alt="">
-
+                            <img src="/starter-code/assets/images/Time tracking.png" alt="">
                         </div>
                         <div class="project__title fs-400">
-                            <h3>Design portfolio</h3>
+                            <h3>Time tracking dashboard</h3>
 
                         </div>
                         <div class="project__description fs-300">
                             <p>HTML</p>
                             <p>CSS</p>
+                            <p>JSS</p>
                         </div>
                         <div class="project__buttons">
-                            <button class="button">View project</button>
-                            <button class="button">View code</button>
+                            <button class="button" onclick="window.open('https://helpful-tanuki-5f3094.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Time-tracking-dashboard', '_blank');">View code</button>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project__image">
-                            <img src="/starter-code/assets/images/thumbnail-project-2-small.webp" alt="">
+                            <img src="/starter-code/assets/images/Clipboard.png" alt="">
                         </div>
                         <div class="project__title fs-400">
-                            <h3>Design portfolio</h3>
+                            <h3>Clipboard landing page</h3>
 
                         </div>
                         <div class="project__description fs-300">
@@ -157,16 +154,16 @@
                             <p>CSS</p>
                         </div>
                         <div class="project__buttons">
-                            <button class="button">View project</button>
-                            <button class="button">View code</button>
+                            <button class="button" onclick="window.open('https://majestic-bienenstitch-2ed3be.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/clipboard-landing-page-master', '_blank');">View code</button>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project__image">
-                            <img src="/starter-code/assets/images/thumbnail-project-3-small.webp" alt="">
+                            <img src="/starter-code/assets/images/Testimonial.PNG" alt="">
                         </div>
                         <div class="project__title fs-400">
-                            <h3>Design portfolio</h3>
+                            <h3>Testimonial grid</h3>
 
                         </div>
                         <div class="project__description fs-300">
@@ -174,16 +171,16 @@
                             <p>CSS</p>
                         </div>
                         <div class="project__buttons">
-                            <button class="button">View project</button>
-                            <button class="button">View code</button>
+                            <button class="button" onclick="window.open('https://wonderful-ganache-591903.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Testimonial-grid', '_blank');">View code</button>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project__image">
-                            <img src="/starter-code/assets/images/thumbnail-project-4-small.webp" alt="">
+                            <img src="/starter-code/assets/images/News.png" alt="">
                         </div>
                         <div class="project__title fs-400">
-                            <h3>Design portfolio</h3>
+                            <h3>News homepage</h3>
 
                         </div>
                         <div class="project__description fs-300">
@@ -191,16 +188,16 @@
                             <p>CSS</p>
                         </div>
                         <div class="project__buttons">
-                            <button class="button">View project</button>
-                            <button class="button">View code</button>
+                            <button class="button" onclick="window.open('https://cheery-frangipane-c61314.netlify.app/#p', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/News-homepage', '_blank');">View code</button>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project__image">
-                            <img src="/starter-code/assets/images/thumbnail-project-5-small.webp" alt="">
+                            <img src="/starter-code/assets/images/FAQ.png" alt="">
                         </div>
                         <div class="project__title fs-400">
-                            <h3>Design portfolio</h3>
+                            <h3>FAQ accordion card</h3>
 
                         </div>
                         <div class="project__description fs-300">
@@ -208,17 +205,53 @@
                             <p>CSS</p>
                         </div>
                         <div class="project__buttons">
-                            <button class="button">View project</button>
-                            <button class="button">View code</button>
+                            <button class="button" onclick="window.open('https://dashing-fairy-9d484c.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/FAQ-accordion-card', '_blank');">View code</button>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project__image">
-                            <img src="/starter-code/assets/images/thumbnail-project-6-small.webp" alt="">
+                            <img src="/starter-code/assets/images/Age.png" alt="">
 
                         </div>
                         <div class="project__title fs-400">
-                            <h3>Design portfolio</h3>
+                            <h3>Age calculator app</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://singular-piroshki-ca5a01.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Age-calculator-app', '_blank');" >View code</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Article.png" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>Article preview</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://candid-sable-a81cd1.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Article-preview-component', '_blank');">View code</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Base apparel.png" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>Base apparel page</h3>
 
                         </div>
                         <div class="project__description fs-300">
@@ -226,10 +259,220 @@
                             <p>CSS</p>
                         </div>
                         <div class="project__buttons">
-                            <button class="button">View project</button>
-                            <button class="button">View code</button>
+                            <button class="button" onclick="window.open('https://glittery-manatee-0d2418.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Base-apparel-coming-soon', '_blank');">View code</button>
                         </div>
                     </div>
+                    
+                    
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/FourCard.jpg" alt="">
+
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>Four card feature selection</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://bejewelled-crisp-904dd0.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Four-card-feature-section', '_blank');">View code</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Intro comp.png" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>Intro component</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://singular-crisp-0f5370.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Intro-component-with-signup-form', '_blank');">View code</button>
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Order summary.png" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>Order summary component</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://inspiring-snickerdoodle-6b3c68.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Order-summary-component', '_blank');">View code</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Ping soon.png" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>Ping coming soon page</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://delightful-daifuku-95a3ad.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Ping-single-column-coming-soon-page', '_blank');">View code</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Price grid.png" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>Single price grid component</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://superlative-elf-3c5366.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Single-price-grid-component', '_blank');">View code</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Product prvw.png" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>Product preview card</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://dulcet-pegasus-54b515.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Product-preview-card-component', '_blank');">View code</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Prof card.PNG" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>Profile card component</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://superb-cassata-230b79.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Profile-card-component', '_blank');">View code</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Rating.png" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>Interactive rating component</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://glittery-maamoul-e430b1.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Interactive-rating-component', '_blank');">View code</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Res summary.png" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>results summary component</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://helpful-haupia-fd0868.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Result-summary-component', '_blank');">View code</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Social proof.png" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>Social proof section</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://elegant-alpaca-9f2528.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Social-proof-section', '_blank');">View code</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Stats preview.png" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>Stats preview</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://idyllic-moxie-70cf6d.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/Stats-preview-card-component', '_blank');">View code</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="/starter-code/assets/images/Suv.png" alt="">
+                        </div>
+                        <div class="project__title fs-400">
+                            <h3>3-column preview card</h3>
+
+                        </div>
+                        <div class="project__description fs-300">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project__buttons">
+                            <button class="button" onclick="window.open('https://magenta-kitten-b5f7cd.netlify.app/', '_blank');">View project</button>
+                            <button class="button" onclick="window.open('https://github.com/zsoolti8917/3-column-preview-card', '_blank');">View code</button>
+                        </div>
+                    </div>
+                   
+                    
                 </div>
             </section>
 
@@ -240,7 +483,7 @@
     </main>
 
     <footer class="footer">
-        <section class="header__footer">
+        <section id="bottom" class="header__footer">
             <div class="header__footer-container flex-center">
                 <div class="header__footer-left">
                     <h2 class="header__footer-title fs-800">
@@ -280,14 +523,14 @@
                 </div>
                 <div class="footer__right">
                     <div class="logo__container">
-                        <a href=""><img src="starter-code/assets/images/icon-github.svg" alt="GitHub"
-                                title="GitHub"></a>
-                        <a href=""><img src="starter-code/assets/images/icon-frontend-mentor.svg"
-                                alt="Frontendmentor" title="Frontendmentor"></a>
-                        <a href=""><img src="starter-code/assets/images/icon-linkedin.svg" alt="LinkedIn"
-                                title="LinkedIn"></a>
-                        <a href=""><img src="starter-code/assets/images/icon-twitter.svg" alt="Twitter"
-                                title="Twitter"></a>
+                        <a href="https://github.com/zsoolti8917"><img src="starter-code/assets/images/icon-github.svg" alt="GitHub"
+                                title="GitHub" target="_blank"></a>
+                        <a href="https://www.frontendmentor.io/profile/zsoltvarju"><img src="starter-code/assets/images/icon-frontend-mentor.svg"
+                                alt="Frontendmentor" title="Frontendmentor" target="_blank"></a>
+                        <a href="https://www.linkedin.com/in/zsolt-varj%C3%BA-019419234/"><img src="starter-code/assets/images/icon-linkedin.svg" alt="LinkedIn"
+                                title="LinkedIn" target="_blank"></a>
+                        <a href="https://www.facebook.com/zsoolti8917/"><img src="starter-code/assets/images/icon-twitter.svg" alt="Twitter"
+                                title="Twitter" target="_blank"></a>
                     </div>
                 </div>
             </div>
