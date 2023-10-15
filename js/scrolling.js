@@ -1,11 +1,5 @@
-$(document).ready(function() {
-    $(".scrollToBottom").click(function() {
-      $("html, body").animate({
-        scrollTop: $("#bottom").offset().top
-      }, 1000);
-    });
-  });
-  
+
+
 const form = document.querySelector('.contact-form')
 const userEmail = document.getElementById('email');
 const submit = document.querySelector('.submit-button')

@@ -187,10 +187,30 @@ h6 {
     width: 1px;
 }
 
+html.lenis {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
 body {
     background-color: var(--clr-primary-900);
     color: var(--clr-primary-100);
-    min-height: 100vh;
+    
     font-family: var(--ff-primary);
     display: flex;
     flex-direction: column;
