@@ -1,42 +1,39 @@
-gsap.from(".infobar", {
-    y: -100,
-    duration: 1,
-    ease: "back",
-})
 
-
-gsap.from(".content__header-left >*, .bg-rings", {
-    x: -1000,
-    duration: 1,
-    ease: "back",
-    scale: -0.5,
-    stagger: 0.25,
-    delay: 1
-})
-
-gsap.from(".content__header-right > img, .bg-circle", {
-    x: 1000,
-    duration: 1,
-    ease: "back",
-    delay: 1
-
-})
 
 document.addEventListener('DOMContentLoaded', function() {
     // Target the .content__divider class
+    gsap.from(".infobar", {
+        y: -100,
+        duration: 1,
+        ease: "ower2.out",
+        
+    })
+    
+    
+    gsap.from(".content__header-left >*, .bg-rings", {
+        x: -1000, // Reduced from -1000 to -200 for less extreme movement
+        duration: 1.2, // Increased to 1.2 seconds for smoother animation
+        ease: "power2.out", // Changed to a less bouncy easing function
+        scale: 0.9, // Modified to 0.9, as negative scale might not be visually appealing
+        stagger: 0.15, // Reduced to 0.15 for quicker succession
+        delay: 0.5 // Reduced delay to 0.5 seconds for quicker start
+    });
+    
+    gsap.from(".content__header-right > img, .bg-circle", {
+        x: 1000,
+        duration: 1,
+        ease: "power2.out",
+        delay: 1
+    
+    })
     gsap.to('.content__divider', {
       duration: 1, // Animation time in seconds
       opacity: 1, // Final opacity
       ease: 'power3.out', // Easing function
-      delay: 2
+      delay: 1
     });
 
-    gsap.to('.content__divider', {
-        duration: 1,
-        opacity: 1,
-        ease: 'power3.out',
-        delay: 1 // Delay of 1 second for the horizontal rule
-      });
+
     
       // Animate each knowledge-item individually
       const items = document.querySelectorAll('.knowledge-item');
@@ -53,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
       gsap.registerPlugin(ScrollTrigger);
 
       // Animate the main__content-title
-      gsap.to('.main__content-title', {
+      gsap.to('.main__content-header', {
         duration: 1,
         opacity: 1,
         ease: 'power3.out',
