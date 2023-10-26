@@ -553,6 +553,10 @@ body {
     
 }
 
+.header__footer{
+    opacity: 0;
+}
+
 @media screen and (min-width: 768px) {
     :root {
         /* || FONT-SIZE || */
@@ -589,6 +593,7 @@ body {
 
     .content__divider{
         margin: 0rem 1rem 0rem 1rem;
+        opacity: 0;
     }
 
     /* || CONTENT HEADER ||*/
@@ -637,6 +642,7 @@ margin: 0;
     max-width: 320px;
     width: 100%;
     text-align: left;
+    opacity: 0;
 }
 
 .knowledge__container{
@@ -664,6 +670,7 @@ margin-bottom: 5rem;
 .project{
     max-width: 325px;
     width: 100%;
+    opacity: 0;
 }
 
 .project__buttons{
