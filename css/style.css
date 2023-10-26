@@ -231,6 +231,10 @@ body {
 .content__divider{
     opacity: 0;
 }
+
+.knowledge-item{
+    opacity: 0;
+}
 /* || HEADER || */
 .header {
     padding: 1rem 0rem 3rem 0rem;
@@ -652,7 +656,7 @@ margin: 0;
     max-width: 320px;
     width: 100%;
     text-align: left;
-    opacity: 0;
+    
 }
 
 .knowledge__container{
