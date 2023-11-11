@@ -26,7 +26,7 @@ html,
 body {
     height: 100%;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
 
 }
 
@@ -809,9 +809,5 @@ width: 100%;
     .bg-rings2{
         
         transform: translateX(80%);
-    }
-
-    .content__header{
-        overflow-y: visible;
     }
 }
