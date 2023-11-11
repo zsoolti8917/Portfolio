@@ -186,7 +186,9 @@ h6 {
     white-space: nowrap;
     width: 1px;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 html.lenis {
     height: auto;
   }
@@ -368,8 +370,26 @@ body {
   .project__image:hover .image-overlay {
     opacity: 1;
   }
-  
+  .bottom__footer-container{
+    padding-bottom: 2rem;
+  }
+#message{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--clr-primary-100);
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    overflow: auto;
+    max-height: 150px;
+    
 
+}
+
+.email-error{
+    display: none;
+}
 .button {
     border: none;
     background-color: transparent;

@@ -10,7 +10,6 @@
     <title>Zsolt Varjú's portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/animation.js" defer></script>
-    <script src="js/scrolling.js" defer></script>
     <script src="https://kit.fontawesome.com/faf7415ea6.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -64,7 +63,7 @@
                         Based in Slovakia, I’m finishing my masters degree, interested in Frontend development.
                     </p>
                     <div class="content__button-container">
-                        <button class="button scrollToBottom"> Contact me</button>
+                        <button class="button" id="scrollToBottom" onclick="scrollToBottom()"> Contact me</button>
                     </div>
                 </div>
                 <div class="content__header-right">
@@ -131,7 +130,7 @@
                     <h2 class="main__content-title fs-800">
                         Projects
                     </h2>
-                    <button class="button scrollToBottom">Contact me</button>
+                    <button class="button" id="scrollToBottom" onclick="scrollToBottom()">Contact me</button>
                 </div>
 
                 <div class="main__content-projects">
@@ -754,7 +753,7 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <section id="bottom" class="header__footer">
             <div class="header__footer-container flex-center">
                 <div class="header__footer-left">
@@ -769,13 +768,10 @@
                 </div>
 
                 <div class="header__footer-right">
-                    <form class="contact-form" action="submit">
-                        <input type="text" name="name" id="name" placeholder="Name" required
-                        minlength="3" >
-                        <input type="email" name="email" id="email" placeholder="Email" minlength="8" 
-                        required>
-                        <span class="email-error" aria-live="polite"></span>
-
+                    <form class="contact-form" action="mailto:zsolt.varju.rl@gmail.com">
+                        <div class="form__button flex-center">
+                            <button class="button submit-button" type="submit">Send message</button>
+                        </div>
                     </form>
 
 
@@ -783,11 +779,7 @@
                 <img class="bg-rings3" src="starter-code/assets/images/pattern-rings.svg" alt="">
             </div>
         </section>
-        <section>
-            <div class="form__button flex-center">
-                <button class="button submit-button" type="submit">Send message</button>
-            </div>
-        </section>
+
         <hr class="content__divider flex-center">
 
         <div class="bottom__footer-container flex-center">
@@ -834,6 +826,18 @@ function raf(time) {
 requestAnimationFrame(raf)
 
     </script>
+
+<script src="js/scrolling.js" defer></script>
+
+<script>
+    function scrollToBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
 </body>
 
 </html>
